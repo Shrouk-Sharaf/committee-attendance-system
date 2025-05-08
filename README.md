@@ -1,7 +1,5 @@
 # Committee Attendance System
 
-[![License](https://img.shields.io/github/license/Shrouk-Sharaf/committee-attendance-system)](LICENSE)
-
 A web-based application for managing committee member attendance, built with PHP and MySQL. This system allows administrators to track member participation in meetings and events.
 
 ## ✨ Features
