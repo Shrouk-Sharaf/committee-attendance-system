@@ -1,0 +1,115 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.app-container { 
+  margin-left: 10% ; 
+  margin-right: 10% ; 
+  padding: 10%; 
+} 
+ 
+h1 { 
+  text-align: center; 
+  font-size: 2.8rem; 
+  margin-bottom: 2rem; 
+  color: #6a0dad; 
+} 
+ 
+h2, h4 { 
+  color: #3a3a3a; 
+  margin-bottom: 1rem; 
+} 
+ 
+.card { 
+  background: #f9f7ff; 
+  padding: 1.5rem; 
+  margin-bottom: 2rem; 
+  border-left: 6px solid #6a0dad; 
+  border-radius: 10px; 
+} 
+ 
+input, select { 
+  padding: 0.75rem; 
+  font-size: 1rem; 
+  width: 100%; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  margin-bottom: 1rem; 
+  background-color: #fafaff;
+} 
+
+ 
+button { 
+  padding: 0.75rem 1.5rem; 
+  background-color: #6a0dad; 
+  color: #fff; 
+  border: none; 
+  border-radius: 8px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+} 
+ 
+button:hover { 
+  background-color: #512b7c; 
+} 
+ 
+.filter-section { 
+  display: flex; 
+  align-items: center; 
+  gap: 1rem; 
+} 
+ 
+.members-list table { 
+  margin-top: 1rem; 
+  border-radius: 8px; 
+} 
+ 
+.members-list th { 
+  background-color: #6a0dad; 
+  color: white; 
+  padding: 1rem; 
+  text-align: left; 
+} 
+ 
+.members-list td { 
+  padding: 1rem; 
+  border-bottom: 1px solid #eee; 
+  background: #fff; 
+} 
+ 
+.members-list tr:hover td { 
+  background-color: #f4f0ff; 
+} 
+ 
+.attendance-records { 
+  margin-top: 1rem; 
+  background-color: #e8defe; 
+  padding: 1rem; 
+  border-radius: 8px; 
+} 
+ 
+.attendance-records table { 
+  width: 100%; 
+} 
+ 
+.attendance-records th { 
+  background-color: #f0e8ff; 
+  color: #333; 
+  padding: 0.5rem; 
+  text-align: left; 
+} 
+ 
+.attendance-records td { 
+  padding: 0.5rem; 
+  border-bottom: 1px solid #ddd; 
+} 
+ 
+.status-present { 
+  color: #388e3c; 
+  font-weight: bold; 
+} 
+ 
+.status-absent { 
+  color: #d32f2f; 
+  font-weight: bold; 
+}
