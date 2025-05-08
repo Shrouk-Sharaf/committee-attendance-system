@@ -99,11 +99,11 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {filteredMembers.map(member => {
+          {filteredMembers.map(member => {
               const memberAttendances = getMemberAttendances(member.id);
               return (
-                <React.Fragment key={member.id}>
-                  <tr>
+                <>
+                  <tr key={member.id}>
                     <td>{member.name}</td>
                     <td>{member.email}</td>
                     <td>{member.committee}</td>
@@ -136,9 +136,9 @@ function App() {
                       </td>
                     </tr>
                   )}
-                </React.Fragment>
+                </>
               );
-            })}
+          })}
           </tbody>
         </table>
       </div>
