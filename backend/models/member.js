@@ -25,7 +25,12 @@ module.exports = (sequelize, DataTypes) => {
     joinDate: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW
+    },
+    role: {
+      type: DataTypes.ENUM('admin', 'member'),
+      defaultValue: 'member'
     }
+    
   });
 
   return Member;

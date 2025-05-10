@@ -1,7 +1,10 @@
 const { Member, Attendance } = require('../models/index');
+const jwt = require('jsonwebtoken')
+
 module.exports = {
   createMember: async (req, res) => {
     try {
+
       const member = await Member.create(req.body);
       res.status(201).json(member);
     } catch (error) {
@@ -147,5 +150,20 @@ module.exports = {
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
+  },
+
+  login: async (req, res) => {
+    try{
+      const {email} = req.body;
+      const member = await Member.findOne({ where: {email} });
+      if (!member) return res.status(404).json({ error: 'Member not found' });
+      const token = jwt.sign({ id: member.id,role:member.role }, "mysecret", {expiresIn: '1h'});
+      res.json({ token });
+    }
+    catch(error){
+      console.log(error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+      
   }
 };
