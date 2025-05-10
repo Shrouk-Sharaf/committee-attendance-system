@@ -21,10 +21,6 @@ const isauthorized = (req, res, next) => {
 
 
 const isadmin = async (req, res, next) => {
-    // const member = await Member.findByPk(req.user.id);
-    // if (!member) {
-    //     return res.status(404).json({ message: 'Member not found' });
-    // }
     console.log(req.user);
     if (req.user.role !== 'admin') {
         return res.status(403).json({ message: 'Forbidden' });
